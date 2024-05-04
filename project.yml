@@ -1,0 +1,43 @@
+name: MyBrowserApp
+
+configs:
+  Debug: debug
+  Release: release
+
+settings:
+  base:
+    VERSIONING_SYSTEM: apple-generic
+  configs:
+    Debug:
+      OTHER_SWIFT_FLAGS: -DDEBUG
+
+options:
+  bundleIdPrefix: com.swiftty.MyBrowserApp
+  developmentLanguage: ja
+  localPackagesGroup: ""
+
+packages:
+  MyBrowserPackage:
+    path: MyBrowserPackage
+
+targets:
+  App:
+    type: application
+    platform: iOS
+    settings:
+      base:
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+      configs:
+        Debug:
+          PRODUCT_BUNDLE_IDENTIFIER: com.swiftty.MyBrowserApp.App-debug
+    sources:
+      - MyBrowserApp
+      - path: project.yml
+        group: Configurations
+        buildPhase: none
+      - path: .swiftlint.yml
+        group: Configurations
+        buildPhase: none
+    dependencies:
+      - package: MyBrowserPackage
+        product: MyBrowserPackage

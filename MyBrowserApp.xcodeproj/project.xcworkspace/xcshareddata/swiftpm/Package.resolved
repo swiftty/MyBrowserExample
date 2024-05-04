@@ -1,0 +1,24 @@
+{
+  "originHash" : "cb8a0330686fa5ebf04ba90e0d21160461c9ede284d0a8d7ad84f6b6f3862021",
+  "pins" : [
+    {
+      "identity" : "swiftlintbinary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftty/SwiftLintBinary.git",
+      "state" : {
+        "revision" : "02ad3a868f3e8118a739ec65678ac10a4874dad9",
+        "version" : "0.54.0"
+      }
+    },
+    {
+      "identity" : "xcodegenbinary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftty/XcodeGenBinary.git",
+      "state" : {
+        "revision" : "c691099e80c67bba228c106e452d6e8ecf6329c5",
+        "version" : "2.40.1"
+      }
+    }
+  ],
+  "version" : 3
+}
